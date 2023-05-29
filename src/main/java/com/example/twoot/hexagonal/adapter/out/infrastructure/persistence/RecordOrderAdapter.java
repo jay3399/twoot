@@ -9,7 +9,6 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class RecordOrderAdapter implements RecordOrderPort, GetOrderRecordPort {
 
-
   private final OrderRecordRepository recordRepository;
 
   @Override
@@ -20,8 +19,6 @@ public class RecordOrderAdapter implements RecordOrderPort, GetOrderRecordPort {
         .orElseThrow(IllegalAccessError::new);
 
     return new OrderRecord(orderRecordEntity.getId(), orderRecordEntity.getMoney());
-
-
   }
 
   @Override

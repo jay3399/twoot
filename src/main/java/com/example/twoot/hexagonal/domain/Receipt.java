@@ -1,5 +1,8 @@
 package com.example.twoot.hexagonal.domain;
 
+import lombok.Getter;
+
+@Getter
 public class Receipt {
 
   private String orderId;

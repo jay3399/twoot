@@ -20,7 +20,7 @@ public class GetReceiptService implements GetReceiptUseCase {
 
     Receipt receipt = new Receipt(order.getOrderId(), order.getMoney());
 
-    return new ReceiptResult(order.getOrderId(), order.getMoney());
+    return new ReceiptResult(receipt.getOrderId(), receipt.getMoney());
 
 
   }
